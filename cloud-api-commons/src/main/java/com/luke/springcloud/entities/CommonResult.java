@@ -16,8 +16,9 @@ public class CommonResult<T> {
     private Integer code;
     private String message;
     private T data;
+    private String port;
 
     public CommonResult(Integer code, String message) {
-        this(code, message, null);
+        this(code, message, null, null);
     }
 }

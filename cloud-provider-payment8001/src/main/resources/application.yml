@@ -16,7 +16,7 @@ spring:
 mybatis:
   mapperLocations: classpath:mapper/*.xml
   #所有entity别名类所在包
-  type-aliases-package: com.george.springcloud.entities
+  type-aliases-package: com.luke.springcloud.entities
 
 
 eureka:
@@ -26,5 +26,12 @@ eureka:
     #是否从EurekaServer抓取已有的注册信息,单机无所谓,集群必须设置为true配合ribbon使用负载均衡
     fetch-registry: true
     service-url:
-      #defaultZone: http://localhost:7001/eureka  #单机版
-      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka  #集群版
+      defaultZone: http://localhost:7001/eureka  #单机版
+      #defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka  #集群版
+
+
+  instance:
+    lease-renewal-interval-in-seconds: 2    #设置心跳的时间间隔(默认30秒)
+    lease-expiration-duration-in-seconds: 5 #如果现在超过了5秒的间隔(默认90秒)
+    instance-id: payment8001  #在信息列表时显示主机名称
+    prefer-ip-address: true #访问的路径变成IP地址

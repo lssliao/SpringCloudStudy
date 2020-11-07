@@ -2,7 +2,7 @@ server:
   port: 8022
 spring:
   application:
-    name: cloud-payment-service:8022
+    name: cloud-payment-service
 
   datasource:
     #当前数据源操作类型
@@ -16,8 +16,7 @@ spring:
 mybatis:
   mapperLocations: classpath:mapper/*.xml
   #所有entity别名类所在包
-  type-aliases-package: com.george.springcloud.entities
-
+  type-aliases-package: com.luke.springcloud.entities
 
 eureka:
   client:
@@ -26,5 +25,15 @@ eureka:
     #是否从EurekaServer抓取已有的注册信息,单机无所谓,集群必须设置为true配合ribbon使用负载均衡
     fetch-registry: true
     service-url:
-      #defaultZone: http://localhost:7001/eureka  #单机版
-      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka  #集群版
+      defaultZone: http://localhost:7001/eureka  #单机版
+      #defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka  #集群版
+
+  instance:
+    #设置心跳的时间间隔(默认30秒)
+    lease-renewal-interval-in-seconds: 2
+    #如果现在超过了5秒的间隔(默认90秒)
+    lease-expiration-duration-in-seconds: 5
+    #在信息列表时显示主机名称
+    instance-id: payment8022
+    #访问的路径变成IP地址
+    prefer-ip-address: true

@@ -18,19 +18,21 @@ import javax.annotation.Resource;
  */
 @RestController
 public class OrderController {
-    public static final String URL = "http://127.0.0.1:8001";
+    //    public static final String URL = "http://127.0.0.1:8001";
+    //实现负载均衡
+    public static final String URL = "http://CLOUD-PAYMENT-SERVICE";
 
     @Resource
     RestTemplate restTemplate;
 
     @PostMapping("/consumet/payment/create")
-    public CommonResult<Payment> create(@RequestBody Payment payment) {
+    public CommonResult create(@RequestBody Payment payment) {
         return restTemplate.postForObject(URL + "/payment/create", payment, CommonResult.class);
     }
 
 
     @GetMapping("/consumet/payment/get/{id}")
-    public CommonResult<Payment> getPayment(@PathVariable("id") Long id) {
+    public CommonResult getPayment(@PathVariable("id") Long id) {
         return restTemplate.getForObject(URL + "/payment/get/" + id, CommonResult.class);
     }
 
