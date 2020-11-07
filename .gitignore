@@ -1,3 +1,16 @@
 # Project exclude paths
-/cloud-api-commons/target/
-/target/
+*.log
+.project
+.settings/
+target/
+.classpath
+.factorypath
+*.launch
+*.class
+.idea/
+/idm.iml
+build
+/.checkstyle
+/bin/
+*.iml
+*.DS_STORE
