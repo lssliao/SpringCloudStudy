@@ -32,8 +32,6 @@ R
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
 D
 SpringCloudStudy.iml,2\0\204a916e3196496f16a1e017ecad88a7d440335f
-v
-Fcloud-provider-payment8001/src/main/resources/mapper/PaymentMapper.xml,f\b\fbf0da2776341ac0fcd17cde725dd0e608aa1827
 N
 cloud-consumer-order80/pom.xml,c\d\cdc81ae39f1af3dd31eef9b2ea88ba55ab9753ee
 z
