@@ -1,0 +1,10 @@
+server:
+  port: 80
+# 服务别名---zookeeper注册中心名称
+spring:
+  application:
+    name: cloud-consumer-order
+  cloud:
+    zookeeper:
+      # 替换成 zookeeper 服务的IP 和 port
+      connect-string: 192.168.81.129:2181
