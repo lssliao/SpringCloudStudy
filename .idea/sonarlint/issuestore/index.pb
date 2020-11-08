@@ -60,3 +60,19 @@ R
 "cloud-provider-payment8022/pom.xml,b\a\bab7e1cf14eefa7774d53c35f70413f6b2e613b1
 Ç
 Rcloud-provider-payment8022/src/main/java/com/luke/springcloud/PaymentMain8022.java,2\4\244436d32c5e5ca2aae553f4a9d2273da307c4fd
+Ç
+Rcloud-provider-payment8004/src/main/java/com/luke/springcloud/PaymentMain8004.java,7\a\7a2172e1eb829c8b885159c9cc4465909e9b45ab
+R
+"cloud-provider-payment8004/pom.xml,4\d\4d49cb9474a1167d135f15337a9b0169271c8f88
+è
+_cloud-provider-payment8004/src/main/java/com/luke/springcloud/controller/PaymentController.java,a\3\a342ab6902c08cef65ef433edd0f2b619d43e09c
+ç
+]cloud-consumerzk-order80/src/main/java/com/luke/springcloud/controller/OrderZKController.java,3\4\34cb42d6e6068233a249c9a9dc4496bdd7d32cc6
+~
+Ncloud-consumerzk-order80/src/main/java/com/luke/springcloud/OrderZkMain80.java,d\f\dfff1bb96d04d04456452300a5c81bb725285044
+P
+ cloud-consumerzk-order80/pom.xml,b\d\bd079fa019b24e5030b8da596bfa6ea0f5e3f471
+ê
+`cloud-consumerzk-order80/src/main/java/com/luke/springcloud/config/ApplicationContextConfig.java,e\c\ece0ad3dba9ae735c5091db8ee282c8a5c5b0bde
+R
+"cloud-provider-payment8006/pom.xml,6\1\613b664bc7a98167963e582aa76e0f21a51a6758
