@@ -17,8 +17,11 @@
         <module name="cloud-provider-payment8022" />
         <module name="cloud-config-server-center-3344" />
         <module name="cloud-consumer-feign-hystrix-order80" />
+        <module name="cloud-stream-rabbitmq-provider8801" />
         <module name="cloud-consumerzk-order80" />
         <module name="cloud-consumer-hystrix-dashboard9001" />
+        <module name="cloud-stream-rabbitmq-consumer8802" />
+        <module name="cloud-stream-rabbitmq-consumer8803" />
         <module name="cloud-config-center-3344" />
         <module name="cloud-gateway-gateway9527" />
         <module name="ConfigCenterMain3344" />
