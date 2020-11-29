@@ -14,6 +14,8 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/ConfigCenterMain3344/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-config-server-center-3344/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-provider-payment8002/pom.xml" />
       </set>
     </option>
